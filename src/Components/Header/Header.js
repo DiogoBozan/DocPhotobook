@@ -1,14 +1,14 @@
-import React from 'react'
-import styles from "./Header.module.css"
+import React from 'react';
 import { Link } from "react-router-dom";
-import "../../App.css"
+import "../../App.css";
 import { ReactComponent as DogsSvg } from "../../Assets/dogs.svg";
-import { UserContext } from "../../Context/UserContext"
+import { UserContext } from "../../Context/UserContext";
+import styles from "./Header.module.css";
 
 
 function Header() {
 
-    const { data, userLogout } = React.useContext(UserContext);
+    const { data } = React.useContext(UserContext);
 
     return (
         <header className={styles.header}>
@@ -19,7 +19,6 @@ function Header() {
                 {data ? (
                     <Link className={styles.login} to="/conta">
                         {data.nome}
-                        <button onClick={userLogout}>Sair</button>
                     </Link>
                 ) : (
                     <Link className={styles.login} to="/login">

@@ -3,7 +3,7 @@ import styles from "./Footer.module.css"
 
 function Footer() {
     return (
-        <div className={styles.header}>This is a Footer</div>
+        <div className={styles.header}></div>
     )
 }
 
