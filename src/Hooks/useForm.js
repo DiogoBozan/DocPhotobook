@@ -15,6 +15,10 @@ const types = {
     //     regex: /^\d+$/,
     //     message: 'Utilize números apenas.',
     // },
+    number: {
+        regex: /^\d+$/,
+        message: "Utilize apenas números",
+    }
 };
 
 const useForm = (type) => {

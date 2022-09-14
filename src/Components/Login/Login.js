@@ -5,6 +5,7 @@ import LoginCreate from '../LoginCreate/LoginCreate'
 import LoginForm from '../LoginForm/LoginForm'
 import LoginPasswordLost from '../LoginPasswordLost/LoginPasswordLost'
 import LoginPasswordReset from '../LoginPasswordReset/LoginPasswordReset'
+import styles from "./Login.module.css";
 
 function Login() {
 
@@ -13,19 +14,16 @@ function Login() {
     if (login) return <Navigate to="/conta" />
 
     return (
-        <>
-            <p>this is a my login page</p>
-            <Routes>
-                <Route path='/' element={<LoginForm />} />
-                <Route path='/criar' element={<LoginCreate />} />
-                <Route path='/perdeu' element={<LoginPasswordLost />} />
-                <Route path='/resetar' element={<LoginPasswordReset />} />
-
-                {/* <div className={styles.login}>
-
-            </div> */}
-            </Routes>
-        </>
+        <section className={styles.login}>
+            <div className={styles.forms}>
+                <Routes>
+                    <Route path='/' element={<LoginForm />} />
+                    <Route path='/criar' element={<LoginCreate />} />
+                    <Route path='/perdeu' element={<LoginPasswordLost />} />
+                    <Route path='/resetar' element={<LoginPasswordReset />} />
+                </Routes>
+            </div>
+        </section>
     )
 }
 
