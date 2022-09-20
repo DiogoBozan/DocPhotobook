@@ -1,11 +1,13 @@
 import React, { useContext } from 'react'
-import { Route, Routes, Navigate } from "react-router-dom"
+import { Navigate, Route, Routes } from "react-router-dom"
 import { UserContext } from '../../Context/UserContext'
 import LoginCreate from '../LoginCreate/LoginCreate'
 import LoginForm from '../LoginForm/LoginForm'
 import LoginPasswordLost from '../LoginPasswordLost/LoginPasswordLost'
 import LoginPasswordReset from '../LoginPasswordReset/LoginPasswordReset'
-import styles from "./Login.module.css";
+import NotFound from '../NotFound/NotFound'
+import styles from "./Login.module.css"
+
 
 function Login() {
 
@@ -21,6 +23,8 @@ function Login() {
                     <Route path='/criar' element={<LoginCreate />} />
                     <Route path='/perdeu' element={<LoginPasswordLost />} />
                     <Route path='/resetar' element={<LoginPasswordReset />} />
+                    <Route path="*" element={<NotFound />} />
+
                 </Routes>
             </div>
         </section>
