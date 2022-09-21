@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "./UseStatsGraphs.module.css"
+import styles from "./UserStatsGraphs.module.css"
 import { VictoryPie, VictoryChart, VictoryBar } from "victory"
 
 
