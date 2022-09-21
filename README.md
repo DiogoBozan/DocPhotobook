@@ -1,3 +1,5 @@
+![App Screenshot](https://github.com/DiogoBozan/Dog_Photobook/blob/master/src/Assets/screen%20login.png)
+
 # 💻 Project
 Dogs is a social media for dogs lovers, you can post new image, comment a new post and delet a post. You can also check the data statistics that was created with data component called Victory.  You just need login and enjoy you ride. OBS: user and password = dog
 This project was developed by me with help from @Origamid's course.
