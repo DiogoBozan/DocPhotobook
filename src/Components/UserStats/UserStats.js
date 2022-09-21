@@ -5,7 +5,8 @@ import Error from '../Error/Error'
 import Head from '../Head/Head'
 import Loading from '../Loading/Loading'
 
-const UseStatsGraphs = React.lazy(() => import("../UseStatsGraphs/UseStatsGraphs"))
+
+const UserStatsGraphs = React.lazy(() => import("../UserStatsGraphs/UserStatsGraphs"))
 
 
 const UserStats = () => {
@@ -25,7 +26,7 @@ const UserStats = () => {
         return (
             <React.Suspense fallback={<div></div>}>
                 <Head title="Estatisticas" />
-                <UseStatsGraphs data={data} />
+                <UserStatsGraphs data={data} />
             </React.Suspense>
         )
     else return null;
